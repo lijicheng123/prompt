@@ -4,8 +4,8 @@
 #usage
 1、引入js、css
 ```$xslt
-<link rel="stylesheet" type="text/css" href="reset.less">
-<link rel="stylesheet" href="index.less">
+<link rel="stylesheet" type="text/css" href="reset.css">
+<link rel="stylesheet" href="index.css">
 ```
 2、创建示例并触发
 
