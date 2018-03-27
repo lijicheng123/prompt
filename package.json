@@ -1,0 +1,29 @@
+{
+  "name": "prompt",
+  "version": "1.0.0",
+  "description": "prompt dependency nothing",
+  "main": "index.js",
+  "scripts": {
+    "dev": "sh ./bash/dev.sh",
+    "test": "sh ./bash/test.sh",
+    "build": "sh ./bash/build.sh",
+    "deploy": "sh ./bash/deploy.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lijicheng123/prompt.git"
+  },
+  "keywords": [
+    "prompt",
+    "pure",
+    "html",
+    "js",
+    "css"
+  ],
+  "author": "lijicheng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lijicheng123/prompt/issues"
+  },
+  "homepage": "https://github.com/lijicheng123/prompt#readme"
+}

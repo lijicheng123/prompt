@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>延保合同</title>
+    <link rel="stylesheet" type="text/css" href="reset.less">
+    <link rel="stylesheet" href="index.less">
+</head>
+<body>
+
+<button id="open0">打开p0</button>
+<button id="open1">打开p1</button>
+</body>
+<script src="index.js"></script>
+<script>
+    /**
+     * @File index.html
+     * @Author lijicheng
+     * @Created at 2018/3/27
+     * @Last modified by lijicheng
+     */
+    var p0 = new Prompt()
+    document.getElementById('open0').onclick = function (ev) {
+        p0.open({
+            title: '这里是标题p0',
+            message: '这里是提示信息p0',
+            leftButton: '左边按钮p0',
+            rightButton: '右边按钮p0',
+            classList: 'cls',
+            maskEvent: function () {
+                console.log('背景p0')
+                this.close();
+            },
+            leftEvent: function () {
+                console.log('左边按钮p0')
+                this.close();
+
+            },
+            rightEvent: function () {
+                console.log('右边按钮p0')
+                this.close();
+            }
+        })
+    }
+
+    var p1 = new Prompt()
+    document.getElementById('open1').onclick = function (ev) {
+        p1.open({
+            title: '这里是标题p1',
+            message: '这里是提示信息p1',
+            leftButton: '左边按钮p1',
+            rightButton: '右边按钮p1',
+            classList: 'cls',//添加自己的写的class，方便简单自定义  
+            maskEvent: function () {
+                console.log('背景p1')
+                this.close();
+            },
+            leftEvent: function () {
+                console.log('左边按钮p1')
+                this.close();
+            },
+            rightEvent: function () {
+                console.log('右边按钮p1')
+                this.close();
+            }
+        })
+    }
+
+</script>
+</html>
